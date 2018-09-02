@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>String:</strong>
+  <%= @wish.string %>
+</p>
+
+<p>
+  <strong>Belongs to:</strong>
+  <%= @wish.belongs_to %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @wish.date %>
+</p>
+
+<p>
+  <strong>String:</strong>
+  <%= @wish.string %>
+</p>
+
+<%= link_to 'Edit', edit_wish_path(@wish) %> |
+<%= link_to 'Back', wishes_path %>
