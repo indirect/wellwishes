@@ -5,10 +5,9 @@
 <table>
   <thead>
     <tr>
-      <th>String</th>
-      <th>Belongs to</th>
-      <th>Date</th>
-      <th>String</th>
+      <th>Message</th>
+      <th>Source</th>
+      <th>Event</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,10 +15,9 @@
   <tbody>
     <% @wishes.each do |wish| %>
       <tr>
-        <td><%= wish.string %></td>
-        <td><%= wish.belongs_to %></td>
-        <td><%= wish.date %></td>
-        <td><%= wish.string %></td>
+        <td><%= wish.message %></td>
+        <td><%= wish.source %></td>
+        <td><%= wish.event %></td>
         <td><%= link_to 'Show', wish %></td>
         <td><%= link_to 'Edit', edit_wish_path(wish) %></td>
         <td><%= link_to 'Destroy', wish, method: :delete, data: { confirm: 'Are you sure?' } %></td>
